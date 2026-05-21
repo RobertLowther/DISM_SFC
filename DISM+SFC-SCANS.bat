@@ -33,17 +33,6 @@ ECHO PRESS ANY KEY ONCE THESE ARE DONE...
 PAUSE > NUL
 
 CLS
-COLOR 0F
-ECHO.
-ECHO If DISM seems stuck, start PowerShell as ADMIN
-ECHO.
-ECHO then type; Get-Content C:\Windows\Logs\CBS\CBS.log -tail 10 -wait
-ECHO.
-ECHO DISM is truly finished at Ending TrustedInstaller finalization
-ECHO.
-ECHO.
-ECHO RUNNING DISM Cleanup-image Restorehealth
-ECHO.
 DISM.exe /Online /Cleanup-image /Restorehealth
 
 ECHO.

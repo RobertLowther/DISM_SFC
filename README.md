@@ -54,13 +54,6 @@ These tools are built into modern versions of Windows.
 
 - The script does **not** self-elevate. If you run it without administrator privileges, it exits and tells you to restart it as admin.
 - The script recommends temporarily disabling antivirus, Malwarebytes, backup tools, and file sync software before running repairs.
-- If `DISM` appears stuck, the script suggests monitoring:
-
-```powershell
-Get-Content C:\Windows\Logs\CBS\CBS.log -Tail 10 -Wait
-```
-
-- According to the script, `DISM` is fully finished when you see `Ending TrustedInstaller finalization` in the log output.
 
 ## Example Workflow
 
@@ -77,7 +70,3 @@ Use this script at your own risk. It only runs built-in Windows repair commands,
 ## Repository Contents
 
 - `DISM+SFC-SCANS.bat` - Main repair script
-
-## License
-
-No license file is currently included in this repository. If you plan to share or accept contributions on GitHub, consider adding a license such as MIT.
