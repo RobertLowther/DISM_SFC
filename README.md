@@ -54,6 +54,7 @@ These tools are built into modern versions of Windows.
 
 - The script does **not** self-elevate. If you run it without administrator privileges, it exits and tells you to restart it as admin.
 - The script recommends temporarily disabling antivirus, Malwarebytes, backup tools, and file sync software before running repairs.
+- DISM will often get stuck at 62.3% for a very long time. This is normal. It's the part of the process where it is downloading missing or corrupted components. Do not interrupt it.
 
 ## Example Workflow
 
